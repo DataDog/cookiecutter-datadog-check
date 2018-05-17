@@ -64,7 +64,7 @@ See [metadata.csv](metadata.csv) for a list of metrics provided by this integrat
 
 ### Events
 
-The Redis check does not include any event at this time.
+The {{cookiecutter.check_name}} check does not include any event at this time.
 
 ### Service Checks
 

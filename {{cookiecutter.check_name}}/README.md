@@ -6,7 +6,7 @@
 
 * You can also use images here:
 
-![snapshot](https://raw.githubusercontent.com/DataDog/cookiecutter-datadog-check/master/%7B%7Bcookiecutter.check_name%7D%7D/images/snapshot.png)
+![snapshot][1]
 
 ## Setup
 
@@ -20,7 +20,7 @@ Create a `{{cookiecutter.check_name}}.yaml` in the Datadog Agent's `conf.d` dire
 
 #### Metric Collection
 
-Add this configuration setup to your `{{cookiecutter.check_name}}.yaml` file to start gathering your [metrics](#metrics):
+Add this configuration setup to your `{{cookiecutter.check_name}}.yaml` file to start gathering your [metrics][2]:
 
 ```
 init_config:
@@ -33,11 +33,11 @@ Configuration Options:
 
 [...]
 
-[Restart the Agent](https://docs.datadoghq.com/agent/faq/agent-commands/#start-stop-restart-the-agent) to begin sending Redis metrics to Datadog.
+[Restart the Agent][3] to begin sending Redis metrics to Datadog.
 
 ### Validation
 
-[Run the Agent's `status` subcommand](https://docs.datadoghq.com/agent/faq/agent-commands/#agent-status-and-information) and look for `{{cookiecutter.check_name}}` under the Checks section:
+[Run the Agent's `status` subcommand][4] and look for `{{cookiecutter.check_name}}` under the Checks section:
 
 ```
   Checks
@@ -60,7 +60,7 @@ The check is compatible with all major platforms.
 
 ### Metrics
 
-See [metadata.csv](metadata.csv) for a list of metrics provided by this integration.
+See [metadata.csv][5] for a list of metrics provided by this integration.
 
 ### Events
 
@@ -76,5 +76,12 @@ The {{cookiecutter.check_name}} check does not include any event at this time.
 
 ## Development
 
-Please refer to the [main documentation](https://docs.datadoghq.com/developers/)
+Please refer to the [main documentation][6]
 for more details about how to test and develop Agent based integrations.
+
+[1]: https://raw.githubusercontent.com/DataDog/cookiecutter-datadog-check/master/%7B%7Bcookiecutter.check_name%7D%7D/images/snapshot.png
+[2]: #metrics
+[3]: https://docs.datadoghq.com/agent/faq/agent-commands/#start-stop-restart-the-agent
+[4]: https://docs.datadoghq.com/agent/faq/agent-commands/#agent-status-and-information
+[5]: https://github.com/DataDog/cookiecutter-datadog-check/blob/master/%7B%7Bcookiecutter.check_name%7D%7D/metadata.csv
+[6]: https://docs.datadoghq.com/developers/
